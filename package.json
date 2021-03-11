@@ -1,0 +1,39 @@
+{
+  "name": "loan-contracts",
+  "version": "1.0.0",
+  "description": "Ethereum smart contracts for creating and managing loans",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "lint": "eslint . && solium -d  contracts",
+    "test": "eslint . && solium -d  contracts && solidity-coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lendingblock/loan-contracts"
+  },
+  "author": "Lendingblock",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lendingblock/loan-contracts/issues"
+  },
+  "homepage": "https://github.com/lendingblock/loan-contracts",
+  "dependencies": {
+    "truffle": "4.1.11",
+    "web3": "1.0.0-beta.34"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.3",
+    "eslint": "^4.19.1",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-prettier": "^2.6.0",
+    "eslint-plugin-react": "^7.7.0",
+    "eth-gas-reporter": "0.1.7",
+    "solidity-coverage": "0.5",
+    "solium": "1.1",
+    "truffle-events": "0.0.7",
+    "uuid": "^3.3.2"
+  }
+}
